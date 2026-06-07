@@ -1,5 +1,4 @@
-import { log } from "console";
-import http, { createServer } from "http";
+import http from "http";
 import fs from "fs/promises";
 import path from "path";
 import url from "url";
@@ -34,5 +33,5 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Server runninng on PORT: ${PORT}`);
+  console.log(`Server running on PORT: ${PORT}`);
 });
